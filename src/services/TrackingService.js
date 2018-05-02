@@ -12,4 +12,11 @@ getUserGeneratedRecord = () => {
     }).then((response) => {
         return response;
     });
-};
+},
+getAllRecord = () => {
+    return fetch("http://api.sgyunlian.com/batch/2/records").then((response) => {
+        return response.json();
+    }).then((response) => {
+        return response;
+    });
+};;
